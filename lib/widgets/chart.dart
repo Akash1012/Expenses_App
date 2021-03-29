@@ -33,8 +33,6 @@ class Chart extends StatelessWidget {
 
   double get totalSpending {
     return groupedTransactionValues.fold(0.0, (sum, item) {
-      print('Hello $sum');
-      print(item);
       return sum + item['amount'];
     });
   }
